@@ -31,6 +31,9 @@ public class LoginFragment extends Fragment{
 	private static final String TAG = "LoginFragment";
 	
 	private void onSessionStateChange(Session session, SessionState state, Exception exception) {
+		if (exception != null) {
+			Log.i(TAG, String.format("Exception: %s", exception.toString()));
+		}
 	    if (state.isOpened()) {
 	        Log.i(TAG, "Logged in...");
 	    } else if (state.isClosed()) {
