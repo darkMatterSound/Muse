@@ -2,6 +2,7 @@ package com.armthedillo.muse;
 
 import java.util.Arrays;
 
+import android.app.DownloadManager.Request;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
@@ -36,8 +37,20 @@ public class LoginFragment extends Fragment{
 		}
 	    if (state.isOpened()) {
 	        Log.i(TAG, "Logged in...");
+	        // Request user data and show the results
+            Request.newMeRequest(session, new Request.GraphUserCallback() {
+            	
+                @Override
+                public void onCompleted(GraphUser user, Response response) {
+                    if (user != null) {
+                        //HERE: DISPLAY USER'S PICTURE
+                        userPicture.setProfileId(user.getId());
+                    }
+                }
+            }).executeAsync();
 	    } else if (state.isClosed()) {
 	        Log.i(TAG, "Logged out...");
+	        userPicture.setProfileId(null);
 	    }
 	}
 	
