@@ -2,7 +2,6 @@ package com.armthedillo.muse;
 
 import java.util.Arrays;
 
-import android.app.DownloadManager.Request;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
@@ -11,13 +10,19 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import com.facebook.Request;
+import com.facebook.Response;
 import com.facebook.Session;
 import com.facebook.SessionState;
 import com.facebook.UiLifecycleHelper;
+import com.facebook.model.GraphUser;
 import com.facebook.widget.LoginButton;
+import com.facebook.widget.ProfilePictureView;
 
 
 public class LoginFragment extends Fragment{
+	
+	ProfilePictureView userPicture;
 	
 	@Override
 	public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
@@ -25,6 +30,8 @@ public class LoginFragment extends Fragment{
 	    LoginButton loginButton = (LoginButton) view.findViewById(R.id.loginButton);
 	    loginButton.setFragment(this);
 	    loginButton.setReadPermissions(Arrays.asList("user_likes", "user_status"));
+	    
+	     userPicture = (ProfilePictureView) view.findViewById(R.id.userPicture);
 
 	    return view;
 	}
@@ -47,6 +54,7 @@ public class LoginFragment extends Fragment{
                         userPicture.setProfileId(user.getId());
                     }
                 }
+
             }).executeAsync();
 	    } else if (state.isClosed()) {
 	        Log.i(TAG, "Logged out...");
