@@ -27,4 +27,8 @@
         android:layout_gravity="center_horizontal"
         android:text="@string/login_button" />
     
+    <com.facebook.widget.ProfilePictureView
+        android:id="@+id/userPicture"
+        />
+    
 </LinearLayout>
