@@ -2,29 +2,44 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical">
-
-    <com.facebook.widget.LoginButton
-        android:id="@+id/loginButton"
+    android:orientation="vertical">    
+    
+    <com.facebook.widget.ProfilePictureView
+        android:id="@+id/userPicture"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
-        android:layout_marginTop="30dp"
-        />
-    
-    <TextView
-       android:id="@+id/email"
-       android:layout_width="wrap_content"
-       android:layout_height="wrap_content"
-       android:layout_gravity="center_horizontal"
-       android:paddingTop="100px"
-       android:text="@string/email" />
+        android:layout_marginTop="30dp" />
+ 
+    <LinearLayout
+	    android:layout_width="wrap_content"
+	    android:layout_height="match_parent"
+	    android:orientation="vertical"  
+	    android:layout_gravity="center" 
+        android:layout_marginTop="200dp" >
 
-    <Button
-        android:id="@+id/login_button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center_horizontal"
-        android:text="@string/login_button" />
-    
+        <com.facebook.widget.LoginButton
+	        android:id="@+id/loginButton"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_gravity="center_horizontal"/>
+	    <EditText
+	        android:id="@+id/email"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_gravity="center_horizontal"
+	        android:layout_marginTop="30dp"
+	        android:hint="@string/email"
+	        android:includeFontPadding="false"
+	        android:inputType="textEmailAddress" />
+	
+	    <Button
+	        android:id="@+id/login_button"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_gravity="center_horizontal"
+	        android:text="@string/login_button" />
+
+	</LinearLayout>
+	    
 </LinearLayout>

@@ -6,9 +6,11 @@
     <string name="FBemail_text">E-Mail</string>
     <string name="FBpassword_text">Password</string>
     <string name="login_button">Login</string>
-    <string name="successful_toast">Login Successful!</string>
+    <string name="success">Login Successful!</string>
     <string name="unsuccessful_toast">Login nsuccessful.  Please try again.</string>
     <string name="app_id">601492006598719</string>
-    <string name="email">Login with your e-mail</string>
+    <string name="email">Login with your e-mail address.</string>
+    <string name="tut_desc">Muse matches you to people who love the same music that you do by comparing your playlists to people around you.</string>
+    <string name="tut_connect">Connect to the music services of your choice.</string>
 
 </resources>

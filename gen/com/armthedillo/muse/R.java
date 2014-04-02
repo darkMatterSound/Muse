@@ -199,7 +199,7 @@ containing a value of this type.
         public static final int com_facebook_list_section_header_background=0x7f02000d;
         public static final int com_facebook_loginbutton_silver=0x7f02000e;
         public static final int com_facebook_logo=0x7f02000f;
-        public static final int com_facebook_picker_default_separator_color=0x7f020022;
+        public static final int com_facebook_picker_default_separator_color=0x7f02002f;
         public static final int com_facebook_picker_item_background=0x7f020010;
         public static final int com_facebook_picker_list_focused=0x7f020011;
         public static final int com_facebook_picker_list_longpressed=0x7f020012;
@@ -216,11 +216,24 @@ containing a value of this type.
         public static final int com_facebook_top_background=0x7f02001d;
         public static final int com_facebook_top_button=0x7f02001e;
         public static final int com_facebook_usersettingsfragment_background_gradient=0x7f02001f;
-        public static final int ic_launcher=0x7f020020;
-        public static final int splash=0x7f020021;
+        public static final int grooveshark_default=0x7f020020;
+        public static final int grooveshark_focused=0x7f020021;
+        public static final int grooveshark_pressed=0x7f020022;
+        public static final int grooveshark_selector=0x7f020023;
+        public static final int ic_launcher=0x7f020024;
+        public static final int lastfm_default=0x7f020025;
+        public static final int lastfm_focused=0x7f020026;
+        public static final int lastfm_pressed=0x7f020027;
+        public static final int lastfm_selector=0x7f020028;
+        public static final int round_corner=0x7f020029;
+        public static final int soundcloud_default=0x7f02002a;
+        public static final int soundcloud_focused=0x7f02002b;
+        public static final int soundcloud_pressed=0x7f02002c;
+        public static final int soundcloud_selector=0x7f02002d;
+        public static final int splash=0x7f02002e;
     }
     public static final class id {
-        public static final int action_settings=0x7f04001b;
+        public static final int action_settings=0x7f04001c;
         public static final int com_facebook_login_activity_progress_bar=0x7f040005;
         public static final int com_facebook_picker_activity_circle=0x7f040004;
         public static final int com_facebook_picker_checkbox=0x7f040007;
@@ -241,13 +254,17 @@ containing a value of this type.
         public static final int com_facebook_usersettingsfragment_login_button=0x7f040017;
         public static final int com_facebook_usersettingsfragment_logo_image=0x7f040015;
         public static final int com_facebook_usersettingsfragment_profile_name=0x7f040016;
-        public static final int email=0x7f040019;
+        public static final int email=0x7f04001a;
+        public static final int grooveshark_login=0x7f04001e;
         public static final int large=0x7f040002;
-        public static final int loginButton=0x7f040018;
-        public static final int login_button=0x7f04001a;
+        public static final int lastfm_login=0x7f04001d;
+        public static final int loginButton=0x7f040019;
+        public static final int login_button=0x7f04001b;
         public static final int normal=0x7f040001;
         public static final int picker_subtitle=0x7f040012;
         public static final int small=0x7f040000;
+        public static final int soundcloud_login=0x7f04001f;
+        public static final int userPicture=0x7f040018;
     }
     public static final class layout {
         public static final int com_facebook_friendpickerfragment=0x7f030000;
@@ -267,6 +284,7 @@ containing a value of this type.
         public static final int login=0x7f03000e;
         public static final int muse=0x7f03000f;
         public static final int splash=0x7f030010;
+        public static final int tut_1=0x7f030011;
     }
     public static final class string {
         public static final int FBemail_text=0x7f07001b;
@@ -301,7 +319,9 @@ containing a value of this type.
         public static final int com_facebook_usersettingsfragment_not_logged_in=0x7f07000a;
         public static final int email=0x7f070021;
         public static final int login_button=0x7f07001d;
-        public static final int successful_toast=0x7f07001e;
+        public static final int success=0x7f07001e;
+        public static final int tut_connect=0x7f070023;
+        public static final int tut_desc=0x7f070022;
         public static final int unsuccessful_toast=0x7f07001f;
     }
     public static final class style {
