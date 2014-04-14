@@ -1,17 +1,18 @@
 package com.armthedillo.muse;
 
+import de.voidplus.soundcloud.SoundCloud;
 import android.app.Activity;
 import android.os.Bundle;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.Button;
 import android.widget.Toast;
-import de.voidplus.soundcloud.SoundCloud;
 
 public class Tutorial extends Activity{
 	/*Called when activity is first created*/
 
 	Button lastfm_login;
+	Button soundcloud_login;
 	
 	@Override
 	public void onCreate(Bundle Tutorial) {
@@ -28,12 +29,8 @@ public class Tutorial extends Activity{
                 Toast.makeText(Tutorial.this,"You have activated Last FM",Toast.LENGTH_SHORT).show();
             }
         });
-    }
     
-    SoundCloud login = new SoundCloud(
-    	    "APP_CLIENT_ID",
-    	    "APP_CLIENT_SECRET",
-    	    "LOGIN_NAME",
-    	    "LOGIN_PASS"
-    	);
+    	soundcloud_login = (Button) findViewById(R.id.soundcloud_login);
+    	soundcloud_login.setOnClickListener(new SoundCloud());
+    }
 }

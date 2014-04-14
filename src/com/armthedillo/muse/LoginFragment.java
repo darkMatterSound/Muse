@@ -12,10 +12,7 @@ import android.view.ViewGroup;
 import android.widget.Toast;
 
 import com.facebook.Request;
-<<<<<<< HEAD
 import com.facebook.Response;
-=======
->>>>>>> d1c6d715cb439b0bc7b6530e04862f6206697a78
 import com.facebook.Session;
 import com.facebook.SessionState;
 import com.facebook.UiLifecycleHelper;
