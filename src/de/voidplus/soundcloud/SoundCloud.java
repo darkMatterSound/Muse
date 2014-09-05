@@ -63,8 +63,8 @@ public class SoundCloud {
      */
     public SoundCloud( String _app_client_id, String _app_client_secret )
     {
-        this.app_client_id = _app_client_id;
-        this.app_client_secret = _app_client_secret;
+        this.app_client_id = "563e017762379f07f52373bc27ec6a74";
+        this.app_client_secret = "8c16e938e2df9faa37276ffe80bd81fb";
         
         File data_dir = new File("."+File.separator+"data");
         this.app_serial = new File(data_dir,"serial.ser");

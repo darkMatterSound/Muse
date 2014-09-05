@@ -14,7 +14,7 @@ public class Splash extends Activity {
 		Thread splashTimer = new Thread(){
 			public void run(){
 				try{
-					sleep(5000);
+					sleep(5);
 					Intent loginIntent = new Intent("com.armthedillo.muse.LOGIN");
 					startActivity(loginIntent);
 				} catch (InterruptedException e) {

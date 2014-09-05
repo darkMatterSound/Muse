@@ -29,8 +29,15 @@ public class Tutorial extends Activity{
                 Toast.makeText(Tutorial.this,"You have activated Last FM",Toast.LENGTH_SHORT).show();
             }
         });
-    
+
     	soundcloud_login = (Button) findViewById(R.id.soundcloud_login);
-    	soundcloud_login.setOnClickListener(new SoundCloud());
+    	soundcloud_login.setOnClickListener(new View.OnClickListener() {
+			
+			public void onClick(View view) {
+				Soundcloud.login
+				
+			}
+		});
+    	}
     }
-}
+
